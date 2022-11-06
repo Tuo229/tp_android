@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DB7AE"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/application" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bienvenue dans le centre"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profile"
+        app:layout_constraintStart_toStartOf="@+id/profile"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <TextView
+        android:id="@+id/GoodMorning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="d'Application"
+        android:textColor="#FEDD06"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottom_background_light_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GoodMorning">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/Cart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/circle_green" />
+
+                        <ImageView
+                            android:id="@+id/callImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/Cart"
+                            app:layout_constraintEnd_toEndOf="@+id/Cart"
+                            app:layout_constraintStart_toStartOf="@+id/Cart"
+                            app:layout_constraintTop_toTopOf="@+id/Cart"
+                            app:srcCompat="@drawable/appel" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/Carttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Appel"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/Mapsimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/circle_green" />
+
+                        <ImageView
+                            android:id="@+id/Mapsimage2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/Mapsimage"
+                            app:layout_constraintEnd_toEndOf="@+id/Mapsimage"
+                            app:layout_constraintStart_toStartOf="@+id/Mapsimage"
+                            app:layout_constraintTop_toTopOf="@+id/Mapsimage"
+                            app:srcCompat="@drawable/gps" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/Mapstext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Maps"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/Inboximage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/circle_green" />
+
+                        <ImageView
+                            android:id="@+id/smsImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/Inboximage"
+                            app:layout_constraintEnd_toEndOf="@+id/Inboximage"
+                            app:layout_constraintStart_toStartOf="@+id/Inboximage"
+                            app:layout_constraintTop_toTopOf="@+id/Inboximage"
+                            app:srcCompat="@drawable/sms" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/Inboxtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="SMS"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/imageSettings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/circle_green" />
+
+                        <ImageView
+                            android:id="@+id/webImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageSettings"
+                            app:layout_constraintEnd_toEndOf="@+id/imageSettings"
+                            app:layout_constraintStart_toStartOf="@+id/imageSettings"
+                            app:layout_constraintTop_toTopOf="@+id/imageSettings"
+                            app:srcCompat="@drawable/internet" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Internet"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/imageFavorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/circle_green" />
+
+                        <ImageView
+                            android:id="@+id/audioImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageFavorite"
+                            app:layout_constraintEnd_toEndOf="@+id/imageFavorite"
+                            app:layout_constraintStart_toStartOf="@+id/imageFavorite"
+                            app:layout_constraintTop_toTopOf="@+id/imageFavorite"
+                            app:srcCompat="@drawable/audio" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textFavorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Audio"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/white_btn_background">
+
+                        <ImageView
+                            android:id="@+id/imageLogOut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/circle_green" />
+
+                        <ImageView
+                            android:id="@+id/videoImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageLogOut"
+                            app:layout_constraintEnd_toEndOf="@+id/imageLogOut"
+                            app:layout_constraintStart_toStartOf="@+id/imageLogOut"
+                            app:layout_constraintTop_toTopOf="@+id/imageLogOut"
+                            app:srcCompat="@drawable/jouer" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textLogOut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Video"
+                        android:textAlignment="center"
+                        android:textColor="#34346E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="28dp"
+            android:background="@drawable/green_banner_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/circle_white" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/green_banner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
